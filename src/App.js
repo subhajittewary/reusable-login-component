@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LoginExtendedView from "./ClassComponents/LoginExtendedView.jsx";
+import LoginViewBaseFunctional from "./FunctonalComponents/LoginViewBaseFunctional.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Router>
+        <div className="link-container">
+          <Link to="/class-component" className="link">
+            Class Login
+          </Link>
+          <Link to="/functional-component" className="link">
+            Functional Login
+          </Link>
+        </div>
+        <Routes>
+          <Route path="/class-component" element={<LoginExtendedView />} />
+          <Route path="/functional-component" element={<LoginViewBaseFunctional />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
