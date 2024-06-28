@@ -1,15 +1,14 @@
 import LoginViewBaseClass from "./LoginViewBaseClass.jsx";
 
 export default class LoginExtendedView extends LoginViewBaseClass {
-    constructor(){
-        super();
-        this.state.formData.userPwd = "";   // New field
-        this.state.formData.userType = "";
-    }
-    renderFields() {
-      console.log(this.state);
-      return (
-        <>
+  constructor() {
+    super();
+    this.state.formData.userPwd = ""; // New field
+    this.state.formData.userType = "";
+  }
+  renderFields() {
+    return (
+      <>
         <input
           type="text"
           name="userName"
@@ -49,12 +48,12 @@ export default class LoginExtendedView extends LoginViewBaseClass {
         </select>
         <br />
       </>
-         );
-    }
-  
-    onSubmit(data) {
-      // e.preventDefault();
-      console.log("this.state", data);
-      return;
-    }
+    );
   }
+
+  onSubmit(data) {
+    // e.preventDefault();
+    console.log("this.state", data);
+    return;
+  }
+}

@@ -29,9 +29,7 @@ export default class LoginViewBaseClass extends React.Component {
     }));
   }
 
-  renderFields() {
-    
-  }
+  renderFields() {}
 
   handleSubmit(e) {
     e.preventDefault();
@@ -48,7 +46,9 @@ export default class LoginViewBaseClass extends React.Component {
         <h1>Login Component</h1>
         <form onSubmit={this.handleSubmit} className="login-form">
           {this.renderFields()}
-          <button type="submit" className="login-button">Login</button>
+          <button type="submit" className="login-button">
+            Login
+          </button>
         </form>
       </div>
     );
