@@ -11,7 +11,6 @@ export default function withLoginView(LoginView) {
 
     function handleChange(e) {
       const { name, value } = e.target;
-      console.log("first", e.target);
       setFormData((prevState) => {
         return {
           ...prevState,

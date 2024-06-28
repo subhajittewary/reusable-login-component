@@ -44,7 +44,7 @@ export default function LoginViewFunctional({
       />
       <br />
       <input
-        type="text"
+        type="address"
         name="address"
         value={address}
         onChange={handleChange}
