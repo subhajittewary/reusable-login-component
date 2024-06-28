@@ -42,9 +42,9 @@ export default class LoginViewBaseClass extends React.Component {
 
   render() {
     return (
-      <div className="login-container">
-        <h1>Login Component</h1>
-        <form onSubmit={this.handleSubmit} className="login-form">
+      <div className="form-container">
+        <h1>Login(C)</h1>
+        <form onSubmit={this.handleSubmit} className="form-inner-container">
           {this.renderFields()}
           <button type="submit" className="login-button">
             Login

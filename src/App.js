@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LoginExtendedView from "./ClassComponents/LoginExtendedView.jsx";
-import LoginViewBaseFunctional from "./FunctonalComponents/LoginViewBaseFunctional.jsx";
+import LoginApp from "./FunctonalComponents/LoginApp.jsx";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/class-component" element={<LoginExtendedView />} />
-          <Route path="/functional-component" element={<LoginViewBaseFunctional />} />
+          <Route path="/functional-component" element={<LoginApp />} />
         </Routes>
       </Router>
     </div>
