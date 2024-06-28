@@ -52,7 +52,6 @@ export default class LoginExtendedView extends LoginViewBaseClass {
   }
 
   onSubmit(data) {
-    // e.preventDefault();
     console.log("this.state", data);
     return;
   }
